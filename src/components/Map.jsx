@@ -9,11 +9,12 @@ export class Map extends React.Component {
 
     this.state = {
       defaultProps: {
-        center: {
+        center: this.props.center || {
           lat: this.props.lat || 41.633,
           lng: this.props.lng || -71.222
         },
-        zoom: this.props.zoom || 11
+        zoom: this.props.zoom || 11,
+        styles: this.props.styles || []
       }
     };
   }
@@ -27,6 +28,7 @@ export class Map extends React.Component {
         defaultCenter={this.state.defaultProps.center}
         defaultZoom={this.state.defaultProps.zoom}
         layerTypes={["TrafficLayer"]}
+        options={{ styles: this.state.defaultProps.styles }}
       >
         <MapEmoji
           emoji="🎯"

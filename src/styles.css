@@ -1,4 +1,7 @@
-/* overrides go here */
+/* overrides and helpers go here */
 .mvh-100 {
   min-height: 100vh;
+}
+.mvh-90 {
+  min-height: 90vh;
 }
