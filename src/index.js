@@ -88,7 +88,8 @@ function App() {
         <div className="row py-3 flex-grow-1">
           <div className="col-12">
             <div className="card shadow h-100">
-              <Map apiKey={googleMapsApiKey} />
+              {/* map is defined here and traffic layer is passed in*/}
+              <Map apiKey={googleMapsApiKey} layerTypes={["TrafficLayer"]} />
             </div>
           </div>
         </div>
@@ -123,10 +124,12 @@ function App() {
             </div>
             <div className="modal-body p-0 h-100">
               <div className="h-100 w-100 position-absolute">
+                {/*modal map is defined here- custom styles and zoom are passed in*/}
                 <Map
                   apiKey={googleMapsApiKey}
                   center={[42.302, -71.033]}
                   styles={modalMapStyles}
+                  zoom={13}
                 />
               </div>
             </div>
