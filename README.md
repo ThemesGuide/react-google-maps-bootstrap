@@ -1,10 +1,12 @@
-ReactJs + Google Maps with Bootstrap 4
+React + Google Maps with Bootstrap 4
 ==
 
 👋 Hi,
 
-Here's a ReactJs Google Maps app using create-react-app, 
+Here's a Reactjs Google Maps app using create-react-app, 
 google-map-react and Bootstrap 4. Enjoy! 🗺
+
+<img src="https://pbs.twimg.com/media/DmkfUJLVsAA6dNA.jpg">
 
 Demo: <https://3v401rv28p.codesandbox.io/>
 
